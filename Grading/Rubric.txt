@@ -1,0 +1,41 @@
+
+Testcases
+
+Testcase #1                             __/10
+- positive w/ repeating integers
+
+Testcase #2                             __/10
+- all positive repeating integers
+
+Testcase #3                             __/10
+- all negative integers ~800 values
+
+Testcase #4                             __/10
+- pivot checks
+
+Run time & Memory requirements:
+Queue:
+2.5 pt for run time, 2.5 pt for space
+dequeue                                  __/5
+enqueue                                  __/5
+__getitem__                              __/5
+__setitem__                              __/5
+
+Sorting:
+10 for run time, 10 for space
+Correct QuickSort                        __/10
+Correct Pivot                            __/10
+Correct Insertion Sort                   __/10
+    * -2 for not invoking insertion sort for <10 elements
+
+Pre/Post & Coding Standard               __/10
+
+
+Any Modification of Skeleton code                   TOTAL SCORE *= 90%
+Not using linked queue class for implementation     TOTAL SCORE *= 50%
+Use of container type that's not provided	        TOTAL SCORE *= 25%
+Use of import sys, or setting recursion limit       TOTAL SCORE *= 25%
+
+
+
+TOTAL  ___/100
