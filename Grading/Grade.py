@@ -1,5 +1,8 @@
-from QuickSort_Solution import quick_sort
-from Queue_Solution import  LinkedQueue
+import QuickSort_Solution as sol_qs
+import Queue_Solution as sol_lq
+import Queue as stu_lq
+import QuickSort as stu_qs
+
 TOTAL = 0
 
 def AddValues(queue, values):
@@ -31,9 +34,9 @@ def run_test(fp):
 
     creates linked lists and runs merge sort, then checks for correct result
     '''
-    queue = LinkedQueue()
+    queue = stu_lq.LinkedQueue()
     count, answer = AddValues(queue,fp)
-    quick_sort(queue)
+    stu_qs.quick_sort(queue)
 
     return check(answer, queue)
 
@@ -91,10 +94,10 @@ def test3():
 def test4():
     cur_total  = 0
     x = ['a','z', 'r', 'c', 'g', 'e', 'a']
-    queue = LinkedQueue()
+    queue = stu_lq.LinkedQueue()
     for i in x:
         queue.enqueue(i)
-    quick_sort(queue)
+    stu_qs.quick_sort(queue)
     if check(sorted(x), queue):
         cur_total = 10
         global TOTAL
