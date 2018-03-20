@@ -1,21 +1,24 @@
-from Queue import LinkedQueue, Node
+from QueueE import LinkedQueue, Node
 
 
-def insertion_sort(S):
-    ''' sorts queue inplace, returns head of sorted list '''
-    helper = Node(0,None)
-    cur = S.head
-    pre = helper
-    next = None
-    while cur:
-        next = cur.next
-        while pre.next and pre.next < cur :
-            pre = pre.next
-        cur.next = pre.next
-        pre.next = cur
-        #pre = helper
-        cur = next
-    S.head = helper.next
+def insertion_sort(queue):
+    incrementing = queue.head
+
+    while incrementing.next:
+
+        prev = incrementing
+        current = incrementing.next
+        future = current.next
+
+        if not future or not prev.val > current.val:
+            start = queue.head
+            while start and start.val < current.val:
+                start = start.next
+
+                current = future
+                future = future.next
+
+        incrementing = incrementing.next
 
 
 def pick_pivot(S):

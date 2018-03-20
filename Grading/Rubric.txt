@@ -6,9 +6,10 @@ Testcase #1                             __/10
 
 Testcase #2                             __/10
 - all positive repeating integers
+- ~500 values 
 
 Testcase #3                             __/15
-- all negative integers ~800 values
+- all negative integers ~1600 values
 
 Testcase #4                             __/10
 - pivot checks

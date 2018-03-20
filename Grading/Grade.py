@@ -93,15 +93,22 @@ def test3():
 
 def test4():
     cur_total  = 0
-    x = ['a','z', 'r', 'c', 'g', 'e', 'a']
-    queue = stu_lq.LinkedQueue()
-    for i in x:
-        queue.enqueue(i)
-    stu_qs.quick_sort(queue)
-    if check(sorted(x), queue):
-        cur_total = 10
-        global TOTAL
-        TOTAL += cur_total
+    data = [['a','z', 'r', 'c', 'g', 'e', 'a']
+        , [1 ,2,4, 5, 3,7]
+        , [56,3,5,-22,-4]
+        , [12.3, 122, 120.2]
+        , [ 1, 2, 3]] 
+
+    for el in range(5):  
+        queue = stu_lq.LinkedQueue()
+        ans = sol_lq.LinkedQueue()
+        for i in data[el] :
+            queue.enqueue(i)
+            ans.enqueue(i)
+        if stu_qs.pick_pivot(queue) == sol_qs.pick_pivot(ans):
+            cur_total += 2
+            global TOTAL
+            TOTAL += 2
 
     return f"Testcase 04: {cur_total} / 10"
 

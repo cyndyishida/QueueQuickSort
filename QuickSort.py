@@ -1,6 +1,6 @@
 from Queue import LinkedQueue, Node
 
-m
+
 def insertion_sort(queue):
     pass
 

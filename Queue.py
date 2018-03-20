@@ -56,6 +56,6 @@ class LinkedQueue:
     pass
 
 
-  def __getitem__(self,index):
+  def get_middle(self):
     pass
 
